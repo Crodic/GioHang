@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body onload="onLoad()">
+    <div class="loading" id="loading">
+        <img src="./img/loading.gif">
+    </div>
+    <div class="cart" id="cart">
+        <div class="cart-total">
+            <div class="title">
+                <h1 style="display: inline-block;">Giỏ Hàng</h1>
+                <button type="button" style="width: 20px; height:20px;" onclick="showCart()">X</button>
+            </div>
+            <div class="content">
+                <table style="border: 1px solid black;" cellspacing="3" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Sản Phẩm</th>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Số Lượng</th>
+                            <th>Giá Tiền</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="total">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="total" style="text-align: right;" id="info-total">
+                <h3>Thành tiền: <span>0</span><sup>đ</sup></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="list-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="./img/figure1.png">
+                    <div class="price" style="color: yellow;"><span>1290000</span><sup>đ</sup></div>
+                </div>
+                <div class="card-body">
+                    <h3>Figure Tên Hề Ma Quái</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at corporis dolore facilis
+                        accusantium veritatis commodi, sit iure dolorem, optio vitae quasi,
+                        veniam voluptate! Sequi provident doloremque debitis suscipit consequuntur.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" onclick="buy()">Mua Ngay</button>
+                    <button type="button">
+                        <img src="./img/cart.png" alt="" width="10px">
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./img/figure2.png">
+                    <div class="price" style="color: yellow;"><span>2199000</span><sup>đ</sup></div>
+                </div>
+                <div class="card-body">
+                    <h3>Figure IronMan Tỉ lệ 1:5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at corporis dolore facilis
+                        accusantium veritatis commodi, sit iure dolorem, optio vitae quasi,
+                        veniam voluptate! Sequi provident doloremque debitis suscipit consequuntur.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" onclick="buy()">Mua Ngay</button>
+                    <button type="button">
+                        <img src="./img/cart.png" alt="" width="10px">
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./img/figure3.png">
+                    <div class="price" style="color: yellow;"><span>3200000</span><sup>đ</sup></div>
+                </div>
+                <div class="card-body">
+                    <h3>Figure Dị Nhân</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at corporis dolore facilis
+                        accusantium veritatis commodi, sit iure dolorem, optio vitae quasi,
+                        veniam voluptate! Sequi provident doloremque debitis suscipit consequuntur.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" onclick="buy()">Mua Ngay</button>
+                    <button type="button">
+                        <img src="./img/cart.png" alt="" width="10px">
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./img/figure4.png">
+                    <div class="price" style="color: yellow;"><span>800000</span><sup>đ</sup></div>
+                </div>
+                <div class="card-body">
+                    <h3>Figure Thần Thor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at corporis dolore facilis
+                        accusantium veritatis commodi, sit iure dolorem, optio vitae quasi,
+                        veniam voluptate! Sequi provident doloremque debitis suscipit consequuntur.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" onclick="buy()">Mua Ngay</button>
+                    <button type="button">
+                        <img src="./img/cart.png" alt="" width="10px">
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./img/figure5.webp">
+                    <div class="price" style="color: yellow;"><span>6700000</span><sup>đ</sup></div>
+                </div>
+                <div class="card-body">
+                    <h3>Figure Himeko (Honkai Impact 3)</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at corporis dolore facilis
+                        accusantium veritatis commodi, sit iure dolorem, optio vitae quasi,
+                        veniam voluptate! Sequi provident doloremque debitis suscipit consequuntur.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" onclick="buy()">Mua Ngay</button>
+                    <button type="button">
+                        <img src="./img/cart.png" alt="" width="10px">
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="./img/figure6.webp">
+                    <div class="price" style="color: yellow;"><span>4100000</span><sup>đ</sup></div>
+                </div>
+                <div class="card-body">
+                    <h3>Figure Kirito Hắc Kiếm Sĩ</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at corporis dolore facilis
+                        accusantium veritatis commodi, sit iure dolorem, optio vitae quasi,
+                        veniam voluptate! Sequi provident doloremque debitis suscipit consequuntur.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" onclick="buy()">Mua Ngay</button>
+                    <button type="button">
+                        <img src="./img/cart.png" alt="" width="10px">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./java.js"></script>
+</body>
+
+</html>

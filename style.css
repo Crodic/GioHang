@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-body h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.list-card{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+.card{
+    background-color: rgba(240, 248, 255, 0.534);
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+.card-header{
+    position: relative;
+}
+.card-header img{
+    width: 100%;
+    max-height:200px ;
+}
+
+.card-body{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.card-footer{
+    padding: 5px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-footer button:first-child{
+    flex: 1 1 50%;
+    background-color: rgb(78, 65, 65);
+    border: 0px;
+    padding: 5px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.card-footer button:last-child{
+    flex: 1 2 50%;
+    background-color: rgb(78, 65, 65);
+    border: 0px;
+    padding: 5px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.price{
+    border-radius: 15px 15px 0px 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 2s linear;
+}
+.card:hover .price{
+    display: flex;
+    background-color: rgba(19, 19, 19, 0.263);
+}
+
+.card-footer button:first-child:hover,
+.card-footer button:last-child:hover
+{
+    color: indigo;
+    background-color: rgb(20, 20, 20);
+}
+.cart{
+    display: none;
+    background-color: rgba(15, 15, 15, 0.588);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.cart-total{
+    background-color: azure;
+    border: 5px solid black;
+    padding: 10px;
+    width: 700px;
+    height: max-content;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+.title{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.title h1{
+    margin: 0 auto;
+}
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 9, 9, 0.367);
+    z-index: 3;
+}
+.loading img{
+    width: 10%;
+}
